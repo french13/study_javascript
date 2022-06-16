@@ -20,6 +20,27 @@
         friends.친구3 = "박누리";
         document.write("친구3 : "+friends.친구3+"<br>");
     </script>
+    <h2>Iterate</h2>
+    <script>
+        for(var key in friends) {
+            document.write(key+'<br>');
+        }
+        for(var key in friends) {
+            document.write(friends[key]+'<br>');
+        }
+        for(var key in friends) {
+            document.write(key+' : '+friends[key]+'<br>');
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        friends.showAll = function(){
+            for(var key in this) {
+            document.write(key+' : '+this[key]+'<br>');
+        }
+    }
+    friends.showAll();
+    </script>
 </body>
 
 </html>
